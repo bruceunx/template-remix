@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face { */
+/* 	font-family: Dmsans; */
+/* 	src: url("/fonts/DMSans.woff2") format("woff2"); */
+/* 	font-style: normal; */
+/* 	font-weight: 100 1000; */
+/* 	font-display: swap; */
+/* } */
+/**/
+/* @font-face { */
+/* 	font-family: Handlee; */
+/* 	src: url("/fonts/Handlee.woff2") format("woff2"); */
+/* 	font-weight: normal; */
+/* 	font-style: normal; */
+/* 	font-display: swap; */
+/* } */
+
+@layer base {
+	:root {
+		/* --a: 5.3083% 0.163661 37.224155; accent */
+		/* --ac: 10% 0 0;  accent-content */
+		--p: 65.3083% 0.163661 37.224155; /* primary */
+		--pc: 100% 0 0; /* primary-content */
+		--sc: 63.38% 0.0037 39.47;
+
+		--n: 42.02% 0 0; /* neutral */
+		--nc: 100% 0 0; /* neutral-content */
+	}
+	@media (prefers-color-scheme: light) {
+		:root {
+			color-scheme: light;
+			--b1: 100% 0 0; /* base-100 */
+			--b3: 98.5587% 0.001706 67.80276; /* base-300 */
+			--bc: 26.86% 0 0; /* base-content */
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			color-scheme: dark;
+			--b1: 26.86% 0 0;
+			--b3: 23.92% 0 0;
+			--bc: 89.80% 0.001746 67.800407;
+		}
+	}
+
+	/* for dev with data-theme */
+	[data-theme="light"] {
+		color-scheme: light;
+		--b1: 100% 0 0; /* base-100 */
+		--b3: 98.5587% 0.001706 67.80276; /* base-300 */
+		--bc: 26.86% 0 0; /* base-content */
+	}
+
+	[data-theme="dark"] {
+		color-scheme: dark;
+		--b1: 26.86% 0 0;
+		--b3: 23.92% 0 0;
+		--bc: 89.80% 0.001746 67.800407;
+	}
+}
+
+@layer components {
+	/* .custom-card { */
+	/* 	@apply border-2 shadow-sm rounded-box border-base-content/5 bg-base-100; */
+	/* } */
+	/* .img-frame { */
+	/* 	@apply rounded-[1.3rem] border border-base-content/5 p-1.5 bg-neutral/5; */
+	/* 	@apply dark:bg-neutral/50; */
+	/* } */
+}

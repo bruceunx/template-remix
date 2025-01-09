@@ -1,0 +1,14 @@
+target/
+
+!server/
+server/target
+
+
+**/.DS_Store
+
+node_modules
+
+/.cache
+/build
+.env
+
